@@ -1,7 +1,13 @@
 class PortfoliosController < ApplicationController
     def index
-        @portfolio = Portfolio.all.sort_by(&:id)
+        @portfolio = Portfolio.all
     end 
+
+    def angular 
+      @angular_portfolio_items = Portfolio.angular
+
+    end 
+
 
     def new 
         @portfolio_item = Portfolio.new
