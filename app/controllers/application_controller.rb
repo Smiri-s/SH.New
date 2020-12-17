@@ -9,7 +9,7 @@ class ApplicationController < ActionController::Base
 before_action :set_copyright
 
 def set_copyright
-    @copyright = FineTuningViewTool::Renderer.copyright 'SMIRI' , 'All copyright reserved'
+    @copyright = FineTuningViewTool::Renderer.copyright 'SMIRI' , 'All rights reserved'
   end
 end
 
