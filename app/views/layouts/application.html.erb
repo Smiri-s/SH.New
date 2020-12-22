@@ -23,13 +23,8 @@
         <p class="alert"><%= alert %></p>
 
           <%= render "shared/application_nav" %>
-
-          <%= login_helper %>
-
           <%= yield %>
-    
-          <%= @copyright %>
-    
+          <%= render "shared/application_footer" %>
           <%= source_helper %>
       </div>
     </div>
