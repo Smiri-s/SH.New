@@ -8,6 +8,10 @@ require("turbolinks").start()
 require("@rails/activestorage").start()
 require("channels")
 
+import Sortable from 'sortablejs';
+
+import "../stylesheets/application"
+
 //= require jquery3
 //= require popper
 //= require bootstrap-sprockets
@@ -18,3 +22,7 @@ require("channels")
 //
 // const images = require.context('../images', true)
 // const imagePath = (name) => images(name, true)
+
+document.addEventListener('turbolinks:load', () => {
+    console.log("Sortable: ", Sortable);
+})
